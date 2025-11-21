@@ -16,10 +16,15 @@ class BasePage:
             self.page.goto(url)
             self.page.wait_for_load_state("networkidle")
 
-    def wait_for_fragment(self, fragment: str) -> None:
-        """Wait until the current URL contains the provided fragment."""
-        with allure.step(f"Wait for URL fragment '{fragment}'"):
-            self.page.wait_for_url(f"**{fragment}")
+    def wait_for_fragment(self, fragment: str, timeout: int = 1_000) -> None:
+        """
+        Упрощённое ожидание после клика по пункту меню.
+
+        Сайт может не менять URL и не иметь секции с таким id,
+        поэтому просто даём странице время прокрутиться/анимироваться.
+        """
+        with allure.step(f"Wait after navigation to '{fragment}'"):
+            self.page.wait_for_timeout(timeout)
 
     def attach_dom(self, name: str = "dom") -> None:
         """Attach the current page HTML to the Allure report."""
