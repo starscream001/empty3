@@ -1,5 +1,23 @@
-import allure
+import importlib.util
+
 import pytest
+
+missing = [
+    name
+    for name in ("allure", "playwright", "pytest_playwright")
+    if importlib.util.find_spec(name) is None
+]
+
+if missing:
+    pytest.skip(
+        "Отсутствуют зависимости: " + ", ".join(sorted(missing)) +
+        ". Установите их командой 'pip install -r requirements.txt'.",
+        allow_module_level=True,
+    )
+
+pytest_plugins = ["pytest_playwright.plugin"]
+
+import allure
 from playwright.sync_api import Page
 
 from tests.ui.pages.home_page import HomePage
