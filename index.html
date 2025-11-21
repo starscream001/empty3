@@ -1,1 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Effective Mobile UI Tests — README</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #111827;
+      --card: #1f2937;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+      --accent-strong: #2563eb;
+      --border: rgba(255, 255, 255, 0.08);
+    }
 
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: radial-gradient(120% 120% at 20% 20%, rgba(96, 165, 250, 0.18), transparent),
+        radial-gradient(140% 140% at 80% 0%, rgba(109, 40, 217, 0.15), transparent),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 0 16px 80px;
+    }
+
+    header {
+      max-width: 1080px;
+      margin: 0 auto 32px;
+      padding: 32px 20px 16px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(96, 165, 250, 0.12);
+      color: #bfdbfe;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .hero {
+      margin-top: 16px;
+      display: grid;
+      gap: 16px;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 44px);
+      letter-spacing: -0.02em;
+    }
+
+    .lead {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    a.button {
+      text-decoration: none;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-weight: 700;
+      color: var(--text);
+      background: linear-gradient(120deg, var(--accent), var(--accent-strong));
+      box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+      transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    }
+
+    a.button.secondary {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border);
+      box-shadow: none;
+    }
+
+    a.button:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.05);
+      box-shadow: 0 12px 40px rgba(37, 99, 235, 0.3);
+    }
+
+    .tagline {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      gap: 14px;
+    }
+
+    .card {
+      background: linear-gradient(145deg, rgba(31, 41, 55, 0.65), rgba(17, 24, 39, 0.7));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 22px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 22px;
+      letter-spacing: -0.01em;
+    }
+
+    .card h3 {
+      margin: 18px 0 8px;
+      font-size: 17px;
+      color: #c7d2fe;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px;
+    }
+
+    code, pre {
+      font-family: "JetBrains Mono", "Fira Code", monospace;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 3px 6px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      color: #cbd5f5;
+    }
+
+    pre {
+      margin: 6px 0;
+      padding: 12px;
+      overflow-x: auto;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+      margin: 10px 0;
+      color: var(--text);
+    }
+
+    .steps li {
+      margin-bottom: 8px;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 0;
+    }
+
+    .pill-list li {
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: #d1d5db;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      margin-top: 12px;
+      font-size: 13px;
+    }
+
+    .highlight {
+      color: #a5b4fc;
+      font-weight: 700;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #34d399;
+      display: inline-block;
+      box-shadow: 0 0 0 6px rgba(52, 211, 153, 0.15);
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="badge"><span class="status-dot"></span>UI-тесты Effective Mobile</div>
+    <div class="hero">
+      <div>
+        <h1>README в формате лендинга</h1>
+        <p class="lead">Одностраничное описание проекта UI-тестов главной страницы <span class="highlight">effective-mobile.ru</span> с инструкциями по запуску локально и в Docker.</p>
+        <div class="cta">
+          <a class="button" href="https://github.com" target="_blank" rel="noreferrer">Склонировать репозиторий</a>
+          <a class="button secondary" href="https://docs.docker.com/get-started/" target="_blank" rel="noreferrer">Docker — руководство</a>
+        </div>
+      </div>
+      <div class="tagline">
+        <strong>Что проверяем:</strong>
+        <ul>
+          <li>Навигацию по шапке: «О нас», «Вакансии», «Отзывы», «Контакты».</li>
+          <li>Ссылки и поведение блока «Услуги».</li>
+          <li>Переходы к якорям #services и #contact с проверкой отображения блоков.</li>
+        </ul>
+        <p>Тесты используют Playwright + Pytest в связке с паттерном Page Object и могут запускаться локально или в контейнере.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Быстрый старт локально</h2>
+      <ol class="steps">
+        <li>Создайте и активируйте виртуальное окружение:
+          <pre><code>python3 -m venv .venv
+source .venv/bin/activate</code></pre>
+        </li>
+        <li>Установите зависимости и скачайте Chromium для Playwright:
+          <pre><code>pip install -r requirements.txt
+playwright install --with-deps chromium</code></pre>
+        </li>
+        <li>Запустите тесты с сохранением артефактов Allure:
+          <pre><code>pytest tests/ui --alluredir=allure-results</code></pre>
+        </li>
+        <li>По желанию откройте отчёт Allure:
+          <pre><code>allure serve allure-results</code></pre>
+        </li>
+      </ol>
+      <p class="lead">Если PyPI недоступен, проверьте прокси: без <code>playwright</code> и <code>pytest-playwright</code> тесты будут помечены как пропущенные.</p>
+    </section>
+
+    <section class="card">
+      <h2>Запуск в Docker</h2>
+      <div class="grid">
+        <div>
+          <h3>Собрать образ</h3>
+          <pre><code>docker build -t effective-mobile-tests .</code></pre>
+        </div>
+        <div>
+          <h3>Выполнить тесты</h3>
+          <pre><code>docker run --rm -v $(pwd)/allure-results:/app/allure-results \
+  effective-mobile-tests</code></pre>
+          <p class="lead">По умолчанию внутри контейнера запускается <code>pytest tests/ui --alluredir=allure-results</code>.</p>
+        </div>
+        <div>
+          <h3>Полезные ссылки</h3>
+          <ul>
+            <li><a href="https://docs.docker.com/get-started/" target="_blank" rel="noreferrer">Официальный гайд Docker</a></li>
+            <li><a href="https://hub.docker.com/" target="_blank" rel="noreferrer">Docker Hub</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Клонирование и структура</h2>
+      <div class="grid">
+        <div>
+          <h3>Клонировать репозиторий</h3>
+          <pre><code>git clone &lt;repo-url&gt;
+cd &lt;repo-folder&gt;</code></pre>
+          <p class="lead">После клонирования следуйте инструкциям выше для локального запуска или Docker.</p>
+        </div>
+        <div>
+          <h3>Структура проекта</h3>
+          <ul>
+            <li><code>tests/ui/pages/</code> — Page Object (базовый класс и главная страница).</li>
+            <li><code>tests/ui/test_home_navigation.py</code> — тесты навигации.</li>
+            <li><code>tests/ui/conftest.py</code> — фикстуры Pytest, интеграция Playwright.</li>
+            <li><code>Dockerfile</code> — окружение для запуска тестов.</li>
+            <li><code>requirements.txt</code> — зависимости проекта.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Технологии и подход</h2>
+      <p>Проект написан под <strong>Python 3.10+</strong> и использует стек для надёжной автоматизации UI:</p>
+      <ul class="pill-list">
+        <li>Playwright</li>
+        <li>Pytest + pytest-playwright</li>
+        <li>Allure для отчётности</li>
+        <li>Page Object pattern</li>
+        <li>Docker для изолированного запуска</li>
+      </ul>
+      <p class="lead">Тесты проверяют доступность целевых блоков сайта и корректность навигации. При проблемах с сетью убедитесь, что домен <code>www.effective-mobile.ru</code> доступен из вашего окружения.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Одностраничный README: всё, что нужно для запуска UI-тестов Effective Mobile, — на этой странице.</p>
+  </footer>
+
+  <script>
+    // Небольшой штрих: плавный скролл для будущих якорей
+    document.documentElement.style.scrollBehavior = "smooth";
+  </script>
+</body>
+</html>
