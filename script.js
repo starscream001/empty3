@@ -1,5 +1,5 @@
-const TELEGRAM_BOT_TOKEN = 8469319239:AAH2YfOvHZVTAiSs5l7r-HpLtyl1ArG9T8A;
-const TELEGRAM_CHAT_ID = 5234599554;
+const TELEGRAM_BOT_TOKEN = "8469319239:AAH2YfOvHZVTAiSs5l7r-HpLtyl1ArG9T8A";
+const TELEGRAM_CHAT_ID = "5234599554";
 
 const navToggle = document.querySelector(".nav__toggle");
 const navList = document.querySelector(".nav__list");
