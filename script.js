@@ -1,131 +1,128 @@
-const TELEGRAM_BOT_TOKEN = "8469319239:AAH2YfOvHZVTAiSs5l7r-HpLtyl1ArG9T8A";
-const TELEGRAM_CHAT_ID = "5234599554";
+const templates = [
+  {
+    title: "Автосервис",
+    slug: "auto-service",
+    status: "4 варианта",
+    actionLabel: "Выбрать дизайн",
+    href: "./templates/auto-service/showcase.html",
+    image: "./templates/auto-service/assets/hero-workshop.png",
+    description: "Четыре готовых дизайна для СТО: от универсального до премиального и технологичного.",
+    tags: ["4 дизайна", "карты", "мессенджеры"],
+    accent: "Авто"
+  },
+  {
+    title: "Медицинская клиника",
+    slug: "medical-clinic",
+    status: "Скоро",
+    href: "#roadmap",
+    image: "",
+    description: "Врачи, направления приема, лицензии, расписание, отзывы и запись.",
+    tags: ["специалисты", "услуги", "лицензии"],
+    accent: "Med"
+  },
+  {
+    title: "Салон красоты",
+    slug: "beauty-salon",
+    status: "Скоро",
+    href: "#roadmap",
+    image: "",
+    description: "Мастера, прайс, портфолио работ, акции и онлайн-запись.",
+    tags: ["мастера", "прайс", "портфолио"],
+    accent: "Beauty"
+  },
+  {
+    title: "Ресторан",
+    slug: "restaurant",
+    status: "Скоро",
+    href: "#roadmap",
+    image: "",
+    description: "Меню, бронь стола, доставка, события и галерея пространства.",
+    tags: ["меню", "бронь", "события"],
+    accent: "Food"
+  },
+  {
+    title: "Юридические услуги",
+    slug: "legal-services",
+    status: "Скоро",
+    href: "#roadmap",
+    image: "",
+    description: "Практики, кейсы, консультации, доверие и заявка на разбор ситуации.",
+    tags: ["практики", "кейсы", "консультация"],
+    accent: "Legal"
+  },
+  {
+    title: "Недвижимость",
+    slug: "real-estate",
+    status: "Скоро",
+    href: "#roadmap",
+    image: "",
+    description: "Объекты, фильтры, подбор, ипотека, район и форма заявки.",
+    tags: ["объекты", "подбор", "ипотека"],
+    accent: "Estate"
+  }
+];
 
-const navToggle = document.querySelector(".nav__toggle");
-const navList = document.querySelector(".nav__list");
-const toTopButton = document.querySelector(".to-top");
-const form = document.getElementById("appointment-form");
-const formStatus = document.querySelector(".form__status");
-const phoneInput = form?.querySelector("input[name='phone']");
+const roadmapItems = [
+  "Понятная структура услуг, цен и специальных предложений.",
+  "Удобная версия для смартфона, планшета и компьютера.",
+  "Звонок, мессенджеры и форма заявки в нужных местах страницы.",
+  "Контакты, график работы и маршрут в Google и Яндекс Картах."
+];
 
-const toggleMenu = () => {
-  const isOpen = navList.classList.toggle("is-open");
-  navToggle.setAttribute("aria-expanded", String(isOpen));
+const createElement = (tagName, className, text) => {
+  const element = document.createElement(tagName);
+  if (className) element.className = className;
+  if (text) element.textContent = text;
+  return element;
 };
 
-navToggle?.addEventListener("click", toggleMenu);
+const renderTemplateCards = () => {
+  const grid = document.querySelector("[data-template-grid]");
+  if (!grid) return;
 
-navList?.addEventListener("click", (event) => {
-  if (event.target instanceof HTMLAnchorElement) {
-    navList.classList.remove("is-open");
-    navToggle.setAttribute("aria-expanded", "false");
-  }
-});
+  templates.forEach((template) => {
+    const card = createElement("article", "template-card");
+    const media = createElement("a", "template-card__media");
+    const content = createElement("div", "template-card__content");
+    const status = createElement("span", "template-card__status", template.status);
+    const title = createElement("h3", "", template.title);
+    const description = createElement("p", "", template.description);
+    const tagList = createElement("div", "tag-list");
+    const action = createElement("a", "text-link", template.actionLabel || "Скоро появится");
 
-document.addEventListener("scroll", () => {
-  if (window.scrollY > 400) {
-    toTopButton.classList.add("visible");
-  } else {
-    toTopButton.classList.remove("visible");
-  }
-});
+    media.href = template.href;
+    action.href = template.href;
 
-toTopButton?.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
+    if (template.image) {
+      const image = createElement("img");
+      image.src = template.image;
+      image.alt = `Превью шаблона: ${template.title}`;
+      media.append(image);
+    } else {
+      media.append(createElement("span", "template-card__placeholder", template.accent));
+    }
 
-const formatPhone = (value) => {
-  const digits = value.replace(/\D/g, "").slice(0, 11);
-  const normalized = digits.startsWith("8") ? "7" + digits.slice(1) : digits;
-  const parts = normalized.replace(/^7/, "");
+    template.tags.forEach((tag) => {
+      tagList.append(createElement("span", "", tag));
+    });
 
-  if (!parts) return "";
-  if (parts.length <= 3) return `+7 (${parts}`;
-  if (parts.length <= 6) return `+7 (${parts.slice(0, 3)}) ${parts.slice(3)}`;
-  if (parts.length <= 8) {
-    return `+7 (${parts.slice(0, 3)}) ${parts.slice(3, 6)}-${parts.slice(6)}`;
-  }
-  return `+7 (${parts.slice(0, 3)}) ${parts.slice(3, 6)}-${parts.slice(6, 8)}-${parts.slice(8, 10)}`;
-};
-
-phoneInput?.addEventListener("input", (event) => {
-  const target = event.target;
-  target.value = formatPhone(target.value);
-});
-
-const validateForm = (formData) => {
-  const name = formData.get("name").trim();
-  const phone = formData.get("phone").trim();
-  const time = formData.get("time").trim();
-
-  if (!name || !phone || !time) {
-    return "Пожалуйста, заполните имя, телефон и удобное время.";
-  }
-
-  if (phone.replace(/\D/g, "").length < 11) {
-    return "Проверьте номер телефона — кажется, он заполнен не полностью.";
-  }
-
-  return "";
-};
-
-const buildMessage = (formData) => {
-  return [
-    "Новая заявка на гирудотерапию:",
-    `Имя: ${formData.get("name")}`,
-    `Телефон: ${formData.get("phone")}`,
-    `Удобное время: ${formData.get("time")}`,
-    `Комментарий: ${formData.get("comment") || "—"}`
-  ].join("\n");
-};
-
-const sendToTelegram = async (message) => {
-  const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
-  const payload = new URLSearchParams({
-    chat_id: TELEGRAM_CHAT_ID,
-    text: message
+    content.append(status, title, description, tagList, action);
+    card.append(media, content);
+    grid.append(card);
   });
+};
 
-  await fetch(url, {
-    method: "POST",
-    mode: "no-cors",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
-    },
-    body: payload.toString()
+const renderRoadmap = () => {
+  const root = document.querySelector("[data-roadmap]");
+  if (!root) return;
+
+  roadmapItems.forEach((item, index) => {
+    const row = createElement("article", "queue__item");
+    row.append(createElement("span", "", String(index + 1).padStart(2, "0")));
+    row.append(createElement("p", "", item));
+    root.append(row);
   });
 };
 
-form?.addEventListener("submit", async (event) => {
-  event.preventDefault();
-  formStatus.textContent = "";
-  formStatus.className = "form__status";
-
-  const formData = new FormData(form);
-  const error = validateForm(formData);
-
-  if (error) {
-    formStatus.textContent = error;
-    formStatus.classList.add("error");
-    return;
-  }
-
-  const message = buildMessage(formData);
-
-  if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
-    formStatus.textContent = "Спасибо! Мы свяжемся с вами. Если нужно быстрее, позвоните по телефону.";
-    formStatus.classList.add("success");
-    form.reset();
-    return;
-  }
-
-  try {
-    await sendToTelegram(message);
-    formStatus.textContent = "Заявка отправлена. Мы подтвердим время приема.";
-    formStatus.classList.add("success");
-    form.reset();
-  } catch (error) {
-    formStatus.textContent = "Не удалось отправить заявку. Пожалуйста, позвоните по телефону.";
-    formStatus.classList.add("error");
-  }
-});
+renderTemplateCards();
+renderRoadmap();

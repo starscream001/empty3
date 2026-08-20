@@ -1,10 +1,19 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" fill="#F2F6FB" />
-  <circle cx="180" cy="160" r="120" fill="#DCEBFF" />
-  <circle cx="980" cy="120" r="80" fill="#E4EEFF" />
-  <circle cx="1040" cy="500" r="140" fill="#D7E7FF" />
-  <rect x="140" y="210" width="920" height="260" rx="36" fill="white" stroke="#E3ECF8" stroke-width="2" />
-  <text x="200" y="320" font-family="Manrope, Arial, sans-serif" font-size="54" fill="#0F172A" font-weight="700">Гирудотерапия</text>
-  <text x="200" y="380" font-family="Manrope, Arial, sans-serif" font-size="28" fill="#4B5D78">Запись к врачу во Всеволожске</text>
-  <text x="200" y="435" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#6B7B93">Вычужанина Светлана Григорьевна</text>
+  <rect width="1200" height="630" fill="#F7F4ED" />
+  <rect x="72" y="72" width="1056" height="486" rx="18" fill="#FFFFFF" stroke="#D9D1C2" stroke-width="2" />
+  <rect x="118" y="118" width="84" height="84" rx="10" fill="#111114" />
+  <path d="M140 140H180V151H152V157H176V168H152V180H140V140Z" fill="#F7F4ED" />
+  <path d="M172 168H184V180H172V168Z" fill="#C7412F" />
+  <text x="118" y="308" font-family="Manrope, Arial, sans-serif" font-size="74" fill="#111114" font-weight="800">Сайты на заказ</text>
+  <text x="118" y="374" font-family="Manrope, Arial, sans-serif" font-size="34" fill="#67635D" font-weight="600">витрина конфигурируемых демо-шаблонов</text>
+  <rect x="118" y="444" width="214" height="56" rx="8" fill="#C7412F" />
+  <text x="144" y="481" font-family="Manrope, Arial, sans-serif" font-size="22" fill="#FFFFFF" font-weight="800">templates/</text>
+  <rect x="760" y="132" width="300" height="72" rx="10" fill="#191D22" />
+  <rect x="760" y="228" width="300" height="72" rx="10" fill="#EBE5D9" />
+  <rect x="760" y="324" width="300" height="72" rx="10" fill="#EBE5D9" />
+  <rect x="760" y="420" width="300" height="72" rx="10" fill="#EBE5D9" />
+  <text x="790" y="177" font-family="Manrope, Arial, sans-serif" font-size="24" fill="#F7F4ED" font-weight="800">Автосервис</text>
+  <text x="790" y="273" font-family="Manrope, Arial, sans-serif" font-size="24" fill="#111114" font-weight="800">Клиника</text>
+  <text x="790" y="369" font-family="Manrope, Arial, sans-serif" font-size="24" fill="#111114" font-weight="800">Салон</text>
+  <text x="790" y="465" font-family="Manrope, Arial, sans-serif" font-size="24" fill="#111114" font-weight="800">Ресторан</text>
 </svg>

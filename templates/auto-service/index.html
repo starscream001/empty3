@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ru" data-variant="industrial">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-config="meta.title">Автосервис — демо шаблон</title>
+  <meta name="description" content="Конфигурируемый одностраничный сайт для автосервиса." data-config-attr="meta.description:content" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#171a1f" />
+  <meta property="og:title" content="Автосервис — демо шаблон" data-config-attr="meta.title:content" />
+  <meta property="og:description" content="Быстрый демо-сайт для СТО." data-config-attr="meta.description:content" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:image" content="./assets/hero-workshop.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Автосервис — демо шаблон" />
+  <meta name="twitter:description" content="Быстрый демо-сайт для СТО." />
+  <meta name="twitter:image" content="./assets/hero-workshop.png" />
+  <link rel="canonical" href="" />
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="./config.js"></script>
+  <link rel="stylesheet" href="./styles.css?v=5" />
+  <script src="./variant.js?v=2"></script>
+  <script src="./app.js?v=5" defer></script>
+  <script id="structured-data" type="application/ld+json"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+
+  <header class="site-header" data-header>
+    <div class="topbar">
+      <div class="container topbar__grid">
+        <span data-config="business.ratingText">4.9 по отзывам клиентов</span>
+        <span data-config="business.address">Адрес сервиса</span>
+        <span data-config="business.hours">Ежедневно с 9:00 до 21:00</span>
+        <a data-config="business.phone" data-config-attr="business.phoneHref:href" href="tel:+70000000000">+7 000 000-00-00</a>
+      </div>
+    </div>
+
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="На главную">
+        <span class="brand__mark" data-config="brand.shortName">AS</span>
+        <span>
+          <strong data-config="brand.name">АвтоСервис</strong>
+          <small data-config="brand.caption">СТО полного цикла</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <ul class="nav__list" data-nav-list></ul>
+      </nav>
+
+      <a class="button button--small button--accent header-cta" href="#contacts" data-config="cta.primary">Записаться</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow" data-config="hero.eyebrow">Сервис, которому доверяют</p>
+          <h1 data-config="hero.title">Ремонт и обслуживание автомобиля без лишних сюрпризов</h1>
+          <p class="hero__lead" data-config="hero.text">Оставьте заявку, и мастер-приемщик свяжется с вами для записи.</p>
+          <div class="hero__actions">
+            <a class="button button--accent" href="#contacts" data-config="cta.primary">Записаться на СТО</a>
+            <a class="button button--secondary" data-config="cta.secondary" data-config-attr="business.whatsappHref:href" href="#">Написать в WhatsApp</a>
+          </div>
+        </div>
+
+        <figure class="hero-media">
+          <img data-hero-image src="./assets/hero-workshop.png" alt="Автомобиль на подъемнике в чистой зоне сервиса" />
+          <figcaption>
+            <span data-config="hero.imageLabel">Диагностика, ТО и ремонт</span>
+            <strong data-config="hero.imageMetric">гарантия на работы</strong>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="quick-facts" aria-label="Ключевые преимущества">
+      <div class="container quick-facts__grid" data-quick-facts></div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container section__grid">
+        <div class="section__intro">
+          <p class="eyebrow" data-config="servicesIntro.eyebrow">Услуги</p>
+          <h2 data-config="servicesIntro.title">Основные работы для вашего автомобиля</h2>
+          <p data-config="servicesIntro.text">От регламентного ТО до сложной диагностики и ремонта узлов.</p>
+        </div>
+        <div class="service-grid" data-services></div>
+      </div>
+    </section>
+
+    <section class="section trust" id="about">
+      <div class="container trust__grid">
+        <div class="trust__content">
+          <p class="eyebrow" data-config="about.eyebrow">О сервисе</p>
+          <h2 data-config="about.title">Сначала диагностика, потом согласованный ремонт</h2>
+          <p data-config="about.text">Мастер показывает, что нужно сделать сейчас, а что можно отложить. Стоимость фиксируется до начала работ.</p>
+          <div class="trust__actions">
+            <a class="button button--dark" href="#contacts" data-config="cta.primary">Записаться на СТО</a>
+            <a class="button button--ghost" href="#faq">Ответы на вопросы</a>
+          </div>
+        </div>
+        <div class="benefit-list" data-benefits></div>
+      </div>
+    </section>
+
+    <section class="section workflow" id="workflow">
+      <div class="container">
+        <div class="section__heading-row">
+          <div>
+            <p class="eyebrow" data-config="workflowIntro.eyebrow">Процесс</p>
+            <h2 data-config="workflowIntro.title">Как проходит визит</h2>
+          </div>
+          <p data-config="workflowIntro.text">Все этапы видны клиенту: от первичного осмотра до выдачи автомобиля.</p>
+        </div>
+        <ol class="workflow__list" data-workflow></ol>
+      </div>
+    </section>
+
+    <section class="section promo" id="promo">
+      <div class="container promo__grid">
+        <div class="promo__copy">
+          <p class="eyebrow" data-config="promotion.eyebrow">Акция</p>
+          <h2 data-config="promotion.title">Выгодное обслуживание в этом месяце</h2>
+          <p data-config="promotion.text">Специальное предложение для новых клиентов.</p>
+        </div>
+        <div class="promo__price">
+          <span data-config="promotion.label">Спеццена</span>
+          <strong data-config="promotion.price">от 2 500 ₽</strong>
+          <small data-config="promotion.until">до конца месяца</small>
+          <a class="button button--accent" href="#contacts" data-config="promotion.cta">Хочу записаться</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section brands" id="brands">
+      <div class="container brands__grid">
+        <div>
+          <p class="eyebrow" data-config="brandsIntro.eyebrow">Марки</p>
+          <h2 data-config="brandsIntro.title">Работаем с популярными марками</h2>
+        </div>
+        <div class="brand-cloud" data-brands></div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section__heading-row">
+          <div>
+            <p class="eyebrow" data-config="reviewsIntro.eyebrow">Отзывы</p>
+            <h2 data-config="reviewsIntro.title">Клиенты возвращаются по записи</h2>
+          </div>
+          <a class="text-link" data-config="reviewsIntro.linkText" data-config-attr="reviewsIntro.linkHref:href" href="#">Смотреть отзывы</a>
+        </div>
+        <div class="review-grid" data-reviews></div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container faq__grid">
+        <div>
+          <p class="eyebrow" data-config="faqIntro.eyebrow">FAQ</p>
+          <h2 data-config="faqIntro.title">Вопросы перед записью</h2>
+          <p data-config="faqIntro.text">Если сомневаетесь, оставьте заявку: мастер уточнит симптомы и подскажет следующий шаг.</p>
+        </div>
+        <div class="faq__list" data-faq></div>
+      </div>
+    </section>
+
+    <section class="section appointment" id="contacts">
+      <div class="container appointment__grid">
+        <div class="appointment__content">
+          <p class="eyebrow" data-config="contacts.eyebrow">Контакты</p>
+          <h2 data-config="contacts.title">Позвоните или напишите нам</h2>
+          <p data-config="contacts.text">Подскажем по стоимости, подберём время и ответим на вопросы.</p>
+          <dl class="contact-list">
+            <div>
+              <dt>Телефон</dt>
+              <dd><a data-config="business.phone" data-config-attr="business.phoneHref:href" href="tel:+70000000000">+7 000 000-00-00</a></dd>
+            </div>
+            <div>
+              <dt>Адрес</dt>
+              <dd data-config="business.address">Адрес сервиса</dd>
+            </div>
+            <div>
+              <dt>График</dt>
+              <dd data-config="business.hours">Ежедневно с 9:00 до 21:00</dd>
+            </div>
+          </dl>
+          <div class="contact-actions" data-contact-actions></div>
+        </div>
+
+        <div class="map" data-map>
+          <div class="map__toolbar">
+            <div class="map__tabs" role="tablist" aria-label="Выберите карты">
+              <button class="map__tab" type="button" role="tab" aria-selected="true" data-map-provider="yandex">Яндекс Карты</button>
+              <button class="map__tab" type="button" role="tab" aria-selected="false" data-map-provider="google" tabindex="-1">Google Maps</button>
+            </div>
+            <a class="map__external" href="#" target="_blank" rel="noopener noreferrer" data-map-external>Открыть карту</a>
+          </div>
+          <div class="map__viewport">
+            <iframe
+              data-map-frame
+              title="Расположение автосервиса на карте"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand brand--footer" href="#top">
+          <span class="brand__mark" data-config="brand.shortName">AS</span>
+          <span>
+            <strong data-config="brand.name">АвтоСервис</strong>
+            <small data-config="brand.caption">СТО полного цикла</small>
+          </span>
+        </a>
+        <p data-config="footer.text">Шаблон сайта для быстрого запуска автосервиса.</p>
+      </div>
+      <nav aria-label="Навигация в подвале">
+        <ul class="footer__links" data-footer-links></ul>
+      </nav>
+      <button class="to-top" type="button" data-to-top aria-label="Вернуться наверх">↑</button>
+    </div>
+  </footer>
+
+  <noscript>Для отображения демо включите JavaScript: шаблон собирает страницу из файла config.js.</noscript>
+</body>
+</html>
