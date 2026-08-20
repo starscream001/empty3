@@ -735,6 +735,28 @@ section[id] {
   gap: 14px;
 }
 
+.review-grid.review-grid--yandex {
+  display: block;
+  border: 0;
+  background: transparent;
+}
+
+.yandex-reviews {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  background: #fff;
+}
+
+.yandex-reviews__frame {
+  width: 100%;
+  height: clamp(500px, 72vh, 680px);
+  display: block;
+  border: 0;
+}
+
 .review-card {
   min-height: 260px;
   padding: 24px;

@@ -142,12 +142,32 @@
     });
   };
 
-  const renderReviews = () => {
-    const root = doc.querySelector("[data-reviews]");
-    if (!root) return;
-    root.replaceChildren();
+  const normalizeYandexUrl = (url) => {
+    if (!url) return "";
 
-    (config.reviews || []).forEach((review) => {
+    try {
+      const parsedUrl = new URL(url, window.location.href);
+      const isYandex = parsedUrl.hostname === "yandex.ru" || parsedUrl.hostname.endsWith(".yandex.ru");
+      return parsedUrl.protocol === "https:" && isYandex ? parsedUrl.href : "";
+    } catch {
+      return "";
+    }
+  };
+
+  const getReviewsConfig = () => {
+    if (Array.isArray(config.reviews)) {
+      return { source: "manual", items: config.reviews, yandex: {} };
+    }
+
+    return {
+      source: config.reviews?.source || "manual",
+      items: Array.isArray(config.reviews?.items) ? config.reviews.items : [],
+      yandex: config.reviews?.yandex || {}
+    };
+  };
+
+  const renderReviewCards = (root, reviews) => {
+    reviews.forEach((review) => {
       const card = createNode("article", "review-card");
       const text = createNode("p", "", review.text);
       const author = createNode("footer");
@@ -156,6 +176,54 @@
       card.append(text, author);
       root.append(card);
     });
+  };
+
+  const renderYandexReviews = (root, yandexConfig) => {
+    const organizationId = String(yandexConfig.organizationId || "").trim();
+    const generatedWidgetUrl = /^\d+$/.test(organizationId)
+      ? `https://yandex.ru/maps-reviews-widget/${organizationId}?comments`
+      : "";
+    const widgetUrl = normalizeYandexUrl(yandexConfig.widgetUrl || generatedWidgetUrl);
+    if (!widgetUrl) return false;
+
+    const wrapper = createNode("div", "yandex-reviews");
+    const frame = createNode("iframe", "yandex-reviews__frame");
+    frame.src = widgetUrl;
+    frame.title = yandexConfig.title || "Отзывы на Яндекс Картах";
+    frame.loading = "lazy";
+    frame.referrerPolicy = "no-referrer-when-downgrade";
+    wrapper.append(frame);
+    root.append(wrapper);
+
+    const generatedProfileUrl = organizationId
+      ? `https://yandex.ru/maps/org/${encodeURIComponent(organizationId)}/reviews/`
+      : "";
+    const profileUrl = normalizeYandexUrl(yandexConfig.profileUrl || generatedProfileUrl);
+    const reviewsLink = doc.querySelector("[data-reviews-link]");
+    if (reviewsLink && profileUrl) {
+      reviewsLink.href = profileUrl;
+      reviewsLink.textContent = yandexConfig.linkText || "Все отзывы на Яндекс Картах";
+      reviewsLink.target = "_blank";
+      reviewsLink.rel = "noopener noreferrer";
+    }
+
+    return true;
+  };
+
+  const renderReviews = () => {
+    const root = doc.querySelector("[data-reviews]");
+    if (!root) return;
+
+    const reviewsConfig = getReviewsConfig();
+    root.replaceChildren();
+    root.classList.remove("review-grid--yandex");
+
+    if (reviewsConfig.source === "yandex" && renderYandexReviews(root, reviewsConfig.yandex)) {
+      root.classList.add("review-grid--yandex");
+      return;
+    }
+
+    renderReviewCards(root, reviewsConfig.items);
   };
 
   const renderFaq = () => {
