@@ -24,6 +24,10 @@ body {
   line-height: 1.5;
 }
 
+html[data-template-loading="true"] body {
+  opacity: 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -71,7 +75,7 @@ img {
   font-size: 14px;
 }
 
-.chooser-brand span {
+.chooser-brand > span {
   width: 36px;
   height: 36px;
   display: grid;
@@ -289,7 +293,8 @@ h1 {
   }
 
   .design-card h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    overflow-wrap: normal;
   }
 
   .chooser-footer__inner {

@@ -1,7 +1,7 @@
 (function () {
-  const config = window.AUTO_SERVICE_TEMPLATE_CONFIG || {};
+  let config = window.AUTO_SERVICE_TEMPLATE_CONFIG || {};
   const doc = document;
-  const activeVariant = window.AUTO_SERVICE_VARIANT || config.defaultVariant || "industrial";
+  let activeVariant = window.AUTO_SERVICE_VARIANT || config.defaultVariant || "industrial";
 
   const getValue = (path) => {
     return path.split(".").reduce((current, key) => {
@@ -345,25 +345,36 @@
     button.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
   };
 
-  const init = () => {
-    applyTheme();
-    configureMeta();
-    configureHeroImage();
-    renderLinks("[data-nav-list]", config.navigation || [], "nav__link");
-    renderLinks("[data-footer-links]", config.footerLinks || [], "footer__link");
-    renderQuickFacts();
-    renderServices();
-    renderBenefits();
-    renderWorkflow();
-    renderBrands();
-    renderReviews();
-    renderFaq();
-    renderContactActions();
-    setupMaps();
-    setupNavigation();
-    setupToTop();
-    setHeaderState();
-    window.addEventListener("scroll", setHeaderState, { passive: true });
+  const init = async () => {
+    try {
+      config = await (window.AUTO_SERVICE_CONFIG_READY || Promise.resolve(config));
+      activeVariant = await (window.AUTO_SERVICE_VARIANT_READY || Promise.resolve(
+        window.AUTO_SERVICE_VARIANT || config.defaultVariant || "industrial"
+      ));
+
+      applyTheme();
+      configureMeta();
+      configureHeroImage();
+      renderLinks("[data-nav-list]", config.navigation || [], "nav__link");
+      renderLinks("[data-footer-links]", config.footerLinks || [], "footer__link");
+      renderQuickFacts();
+      renderServices();
+      renderBenefits();
+      renderWorkflow();
+      renderBrands();
+      renderReviews();
+      renderFaq();
+      renderContactActions();
+      setupMaps();
+      setupNavigation();
+      setupToTop();
+      setHeaderState();
+      window.addEventListener("scroll", setHeaderState, { passive: true });
+    } catch (error) {
+      console.error("Не удалось собрать страницу автосервиса", error);
+    } finally {
+      delete doc.documentElement.dataset.templateLoading;
+    }
   };
 
   init();

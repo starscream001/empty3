@@ -1,45 +1,40 @@
 # Шаблон сайта автосервиса
 
-Конфигурируемый одностраничный шаблон для быстрого демо автосервиса. Ориентир по структуре: плотный верх с доверием и контактами, герой с записью, услуги, преимущества, процесс, акция, марки, отзывы, FAQ, мессенджеры и карты.
+Один шаблон собирает отдельные демо для любого числа клиентов и показывает каждое демо в четырёх вариантах дизайна. Общая структура и стили лежат в корне папки, а данные клиентов изолированы в `clients/`.
 
-## Быстрый запуск демо
+## Новый клиент за пять минут
 
-1. Откройте `templates/auto-service/config.js`.
-2. Замените `brand`, `business`, `hero`, `services`, `promotion`, `reviews` и `faq` под клиента.
-3. Положите фото сервиса в `templates/auto-service/assets/` и укажите пути в `hero.images`.
-4. Настройте заголовок, описание, Open Graph и JSON-LD в `meta`.
-5. Откройте `templates/auto-service/showcase.html` и выберите дизайн.
+1. Скопируйте `clients/_example.json` в `clients/<client-slug>.json`.
+2. Заполните название, контакты, услуги, тексты, цены и мета-информацию.
+3. Добавьте клиента в `clients/manifest.json`.
+4. При необходимости положите фотографии в `assets/clients/<client-slug>/` и укажите пути в `hero.images`.
+5. Откройте `showcase.html?client=<client-slug>` и отправьте ссылку клиенту.
 
-Для локального сервера:
+`config.js` содержит общую структуру шаблона, список дизайнов и базовые значения. Для нового клиента его менять не нужно.
+
+## Адреса демо
+
+- `showcase.html?client=prime-service` — выбор из четырёх дизайнов для клиента.
+- `?client=prime-service` — дизайн клиента по умолчанию.
+- `?client=prime-service&variant=performance` — конкретный дизайн клиента.
+
+Доступные варианты: `industrial`, `performance`, `atelier` и `diagnostic`. Поле `defaultVariant` в клиентском JSON определяет, какой из них откроется без параметра `variant`.
+
+## Локальный запуск
 
 ```bash
-python3 -m http.server 8000 --directory templates/auto-service
+python3 -m http.server 8000
 ```
 
-После запуска выбор дизайна доступен по адресу `http://localhost:8000/showcase.html`.
+После запуска витрина клиента доступна по адресу `http://localhost:8000/templates/auto-service/showcase.html?client=prime-service`.
 
-## Четыре варианта дизайна
+## Что настраивается у клиента
 
-- `?variant=industrial` — универсальный индустриальный.
-- `?variant=performance` — тёмный динамичный.
-- `?variant=atelier` — светлый премиальный.
-- `?variant=diagnostic` — строгий технологичный.
-
-Все варианты используют один `index.html` и один `config.js`. Список вариантов, их обложки, палитры и файлы стилей находятся в `variants`, `themes` и `hero.images`.
-
-## Настройка контактов и карт
-
-Ссылки на телефон и мессенджеры находятся в `contacts.actions`. Адрес из `business.address` автоматически используется для Яндекс Карт и Google Maps. Провайдер по умолчанию и масштаб задаются в `location`.
-
-## Что менять для нового клиента
-
-- `meta` — title, description, keywords, robots, Open Graph, Twitter Card, canonical URL и JSON-LD.
-- `themes` — цвета каждого варианта.
-- `brand` и `business` — название, адрес, телефон, часы, рейтинг.
-- `hero` — главный экран и изображение.
-- `services` — услуги и цены.
-- `promotion` — сезонная акция.
-- `brands` — марки автомобилей.
-- `reviews` и `faq` — доверие и ответы на частые вопросы.
+- `meta` — title, description, keywords, автор, canonical URL, Open Graph, Twitter Card и JSON-LD.
+- `brand` и `business` — название, адрес, телефон, часы и рейтинг.
+- `hero`, `services`, `promotion`, `brands`, `reviews` и `faq` — содержание страницы.
 - `contacts.actions` — телефон, WhatsApp, Telegram и ВКонтакте.
 - `location` — карта по умолчанию и масштаб.
+- `themes` — фирменные цвета для каждого из четырёх дизайнов.
+
+Адрес из `business.address` автоматически используется для Яндекс Карт и Google Maps. Клиентские конфиги содержат только публичные данные; токены и другие секреты в них добавлять нельзя.

@@ -1,0 +1,13 @@
+{
+  "defaultClient": "prime-service",
+  "clients": {
+    "prime-service": {
+      "label": "Прайм Сервис",
+      "config": "./clients/prime-service.json"
+    },
+    "sto-neva": {
+      "label": "Нева Моторс",
+      "config": "./clients/sto-neva.json"
+    }
+  }
+}

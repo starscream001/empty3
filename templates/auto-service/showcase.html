@@ -12,25 +12,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="./config.js"></script>
-  <link rel="stylesheet" href="./showcase.css?v=2" />
-  <script src="./showcase.js?v=2" defer></script>
+  <script src="./client-loader.js?v=1"></script>
+  <link rel="stylesheet" href="./showcase.css?v=3" />
+  <script src="./showcase.js?v=3" defer></script>
 </head>
 <body>
   <header class="chooser-header">
     <div class="container chooser-header__inner">
       <a class="back-link" href="../../" aria-label="Вернуться к направлениям">← Направления</a>
-      <a class="chooser-brand" href="./showcase.html">
-        <span>PS</span>
-        <strong>Дизайны автосервиса</strong>
+      <a class="chooser-brand" href="./showcase.html" data-client-showcase>
+        <span data-client-short-name>PS</span>
+        <strong><span data-client-name>Автосервис</span>: четыре дизайна</strong>
       </a>
-      <a class="contact-link" href="./?variant=industrial">Открыть первый дизайн</a>
+      <a class="contact-link" href="./?variant=industrial" data-first-design>Открыть первый дизайн</a>
     </div>
   </header>
 
   <main>
     <section class="chooser-hero">
       <div class="container chooser-hero__grid">
-        <p class="eyebrow">Выберите подачу</p>
+        <p class="eyebrow"><span data-client-name>Автосервис</span> / выберите подачу</p>
         <h1>Четыре дизайна для автосервиса</h1>
         <p>Один и тот же сервис может выглядеть по-разному. Откройте каждый вариант целиком и выберите характер, который подходит вашему бизнесу.</p>
       </div>

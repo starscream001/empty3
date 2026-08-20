@@ -1,0 +1,71 @@
+{
+  "defaultVariant": "industrial",
+  "meta": {
+    "language": "ru",
+    "title": "Название сервиса — автосервис",
+    "description": "Краткое описание услуг для поисковых систем и социальных сетей.",
+    "keywords": "автосервис, ремонт автомобилей, диагностика",
+    "author": "Название сервиса",
+    "robots": "index, follow",
+    "canonicalUrl": "",
+    "siteName": "Название сервиса",
+    "ogType": "website",
+    "ogLocale": "ru_RU",
+    "ogImage": "./assets/clients/client-slug/social.jpg",
+    "twitterCard": "summary_large_image",
+    "structuredDataEnabled": true,
+    "priceRange": "₽₽"
+  },
+  "brand": {
+    "name": "Название сервиса",
+    "shortName": "NS",
+    "caption": "Специализация сервиса"
+  },
+  "business": {
+    "ratingText": "4.9 рейтинг • 100+ отзывов",
+    "address": "Город, улица, дом",
+    "hours": "Ежедневно с 9:00 до 21:00",
+    "phone": "+7 (000) 000-00-00",
+    "phoneHref": "tel:+70000000000",
+    "whatsappHref": "https://wa.me/70000000000",
+    "openingHoursSchema": "Mo-Su 09:00-21:00"
+  },
+  "hero": {
+    "eyebrow": "Короткое преимущество",
+    "title": "Главное предложение автосервиса",
+    "text": "Два предложения о сервисе, сроках ответа и порядке записи.",
+    "images": {
+      "industrial": { "src": "./assets/clients/client-slug/industrial.jpg", "alt": "Описание фотографии" },
+      "performance": { "src": "./assets/clients/client-slug/performance.jpg", "alt": "Описание фотографии" },
+      "atelier": { "src": "./assets/clients/client-slug/atelier.jpg", "alt": "Описание фотографии" },
+      "diagnostic": { "src": "./assets/clients/client-slug/diagnostic.jpg", "alt": "Описание фотографии" }
+    },
+    "imageLabel": "Основные услуги",
+    "imageMetric": "главная гарантия"
+  },
+  "services": [
+    { "title": "Услуга 1", "description": "Краткое описание услуги.", "price": "от 1 000 ₽" },
+    { "title": "Услуга 2", "description": "Краткое описание услуги.", "price": "от 2 000 ₽" },
+    { "title": "Услуга 3", "description": "Краткое описание услуги.", "price": "по расчёту" }
+  ],
+  "promotion": {
+    "eyebrow": "Акция",
+    "title": "Название специального предложения",
+    "text": "Условия предложения.",
+    "label": "Цена",
+    "price": "0 ₽",
+    "until": "до конца месяца",
+    "cta": "Записаться"
+  },
+  "contacts": {
+    "eyebrow": "Контакты",
+    "title": "Позвоните или напишите нам",
+    "text": "Короткий текст перед контактами.",
+    "actions": [
+      { "label": "Позвонить", "href": "tel:+70000000000" },
+      { "label": "WhatsApp", "href": "https://wa.me/70000000000" },
+      { "label": "Telegram", "href": "https://t.me/client_name" },
+      { "label": "ВКонтакте", "href": "https://vk.me/client_name" }
+    ]
+  }
+}
