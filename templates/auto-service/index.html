@@ -25,10 +25,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <script src="./config.js"></script>
-  <script src="./client-loader.js?v=1"></script>
+  <script src="./client-loader.js?v=2"></script>
   <link rel="stylesheet" href="./styles.css?v=7" />
   <script src="./variant.js?v=3"></script>
-  <script src="./app.js?v=7" defer></script>
+  <script src="./app.js?v=8" defer></script>
   <script id="structured-data" type="application/ld+json"></script>
 </head>
 <body>
@@ -75,7 +75,7 @@
           <p class="hero__lead" data-config="hero.text">Оставьте заявку, и мастер-приемщик свяжется с вами для записи.</p>
           <div class="hero__actions">
             <a class="button button--accent" href="#contacts" data-config="cta.primary">Записаться на СТО</a>
-            <a class="button button--secondary" data-config="cta.secondary" data-config-attr="business.whatsappHref:href" href="#">Написать в WhatsApp</a>
+            <a class="button button--secondary" data-config="cta.secondary" data-config-attr="cta.secondaryHref:href" href="#contacts">Написать в WhatsApp</a>
           </div>
         </div>
 
@@ -112,7 +112,7 @@
           <p data-config="about.text">Мастер показывает, что нужно сделать сейчас, а что можно отложить. Стоимость фиксируется до начала работ.</p>
           <div class="trust__actions">
             <a class="button button--dark" href="#contacts" data-config="cta.primary">Записаться на СТО</a>
-            <a class="button button--ghost" href="#faq">Ответы на вопросы</a>
+            <a class="button button--ghost" href="#faq" data-section-control="faq">Ответы на вопросы</a>
           </div>
         </div>
         <div class="benefit-list" data-benefits></div>
@@ -132,7 +132,7 @@
       </div>
     </section>
 
-    <section class="section promo" id="promo">
+    <section class="section promo" id="promo" data-section="promo">
       <div class="container promo__grid">
         <div class="promo__copy">
           <p class="eyebrow" data-config="promotion.eyebrow">Акция</p>
@@ -148,7 +148,7 @@
       </div>
     </section>
 
-    <section class="section brands" id="brands">
+    <section class="section brands" id="brands" data-section="brands">
       <div class="container brands__grid">
         <div>
           <p class="eyebrow" data-config="brandsIntro.eyebrow">Марки</p>
@@ -171,7 +171,7 @@
       </div>
     </section>
 
-    <section class="section faq" id="faq">
+    <section class="section faq" id="faq" data-section="faq">
       <div class="container faq__grid">
         <div>
           <p class="eyebrow" data-config="faqIntro.eyebrow">FAQ</p>

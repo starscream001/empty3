@@ -63,15 +63,33 @@
     return link;
   };
 
+  const isVisibleLink = (link) => {
+    const href = String(link?.href || "");
+    const sectionId = href.startsWith("#") ? href.slice(1) : "";
+    return !sectionId || config.sections?.[sectionId] !== false;
+  };
+
   const renderLinks = (selector, links, className) => {
     const list = doc.querySelector(selector);
     if (!list) return;
     list.replaceChildren();
 
-    links.forEach((linkItem) => {
+    links.filter(isVisibleLink).forEach((linkItem) => {
       const listItem = createNode("li");
       listItem.append(createLink(linkItem, className));
       list.append(listItem);
+    });
+  };
+
+  const configureSectionVisibility = () => {
+    const sections = config.sections || {};
+
+    doc.querySelectorAll("[data-section]").forEach((section) => {
+      section.hidden = sections[section.dataset.section] === false;
+    });
+
+    doc.querySelectorAll("[data-section-control]").forEach((control) => {
+      control.hidden = sections[control.dataset.sectionControl] === false;
     });
   };
 
@@ -423,6 +441,7 @@
       applyTheme();
       configureMeta();
       configureHeroImage();
+      configureSectionVisibility();
       renderLinks("[data-nav-list]", config.navigation || [], "nav__link");
       renderLinks("[data-footer-links]", config.footerLinks || [], "footer__link");
       renderQuickFacts();

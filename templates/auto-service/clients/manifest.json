@@ -8,6 +8,206 @@
     "sto-neva": {
       "label": "Нева Моторс",
       "config": "./clients/sto-neva.json"
+    },
+    "pskov-001-pskovhab": {
+      "label": "ПсковХаб",
+      "config": "./clients/pskov-001-pskovhab.json"
+    },
+    "pskov-002-avtoservis-na-rizhskom": {
+      "label": "Автосервис на Рижском",
+      "config": "./clients/pskov-002-avtoservis-na-rizhskom.json"
+    },
+    "pskov-003-servisnyy-tsentr": {
+      "label": "Сервисный центр",
+      "config": "./clients/pskov-003-servisnyy-tsentr.json"
+    },
+    "pskov-004-zapchasti-tut": {
+      "label": "Запчасти Тут",
+      "config": "./clients/pskov-004-zapchasti-tut.json"
+    },
+    "pskov-005-ttk-glushiteli": {
+      "label": "ТТК глушители",
+      "config": "./clients/pskov-005-ttk-glushiteli.json"
+    },
+    "pskov-006-motor": {
+      "label": "Мотор",
+      "config": "./clients/pskov-006-motor.json"
+    },
+    "pskov-007-dzhem": {
+      "label": "Джем",
+      "config": "./clients/pskov-007-dzhem.json"
+    },
+    "pskov-008-road60": {
+      "label": "Роад60",
+      "config": "./clients/pskov-008-road60.json"
+    },
+    "pskov-009-na-vysote": {
+      "label": "На высоте",
+      "config": "./clients/pskov-009-na-vysote.json"
+    },
+    "pskov-010-remfar-psk": {
+      "label": "RemFar. psk",
+      "config": "./clients/pskov-010-remfar-psk.json"
+    },
+    "pskov-011-drayv-plyus": {
+      "label": "Драйв Плюс",
+      "config": "./clients/pskov-011-drayv-plyus.json"
+    },
+    "pskov-012-avtoservis-24": {
+      "label": "Автосервис 24",
+      "config": "./clients/pskov-012-avtoservis-24.json"
+    },
+    "pskov-013-tes-auto": {
+      "label": "Tes Auto",
+      "config": "./clients/pskov-013-tes-auto.json"
+    },
+    "pskov-014-elektron-avto": {
+      "label": "Электрон-авто",
+      "config": "./clients/pskov-014-elektron-avto.json"
+    },
+    "pskov-015-avtoelektrik-60rus": {
+      "label": "Автоэлектрик 60rus",
+      "config": "./clients/pskov-015-avtoelektrik-60rus.json"
+    },
+    "pskov-016-arv-service": {
+      "label": "Arv service",
+      "config": "./clients/pskov-016-arv-service.json"
+    },
+    "pskov-017-remont-akpp": {
+      "label": "Ремонт АКПП",
+      "config": "./clients/pskov-017-remont-akpp.json"
+    },
+    "pskov-018-antikor60": {
+      "label": "АнтиКор60",
+      "config": "./clients/pskov-018-antikor60.json"
+    },
+    "pskov-019-start-plus": {
+      "label": "Start Plus",
+      "config": "./clients/pskov-019-start-plus.json"
+    },
+    "pskov-020-pravilnyy-avtoremont": {
+      "label": "Правильный Авторемонт",
+      "config": "./clients/pskov-020-pravilnyy-avtoremont.json"
+    },
+    "pskov-021-startery-i-generatory": {
+      "label": "Стартёры и Генераторы",
+      "config": "./clients/pskov-021-startery-i-generatory.json"
+    },
+    "pskov-022-vroom-vroom-avto": {
+      "label": "Vroom Vroom Avto",
+      "config": "./clients/pskov-022-vroom-vroom-avto.json"
+    },
+    "pskov-023-kig-37": {
+      "label": "Киг-37",
+      "config": "./clients/pskov-023-kig-37.json"
+    },
+    "pskov-024-forsazh-avtoservis-zapchasti-dlya-inomar": {
+      "label": "Форсаж - автосервис, запчасти для иномарок",
+      "config": "./clients/pskov-024-forsazh-avtoservis-zapchasti-dlya-inomar.json"
+    },
+    "pskov-025-five-servise": {
+      "label": "Five Servise",
+      "config": "./clients/pskov-025-five-servise.json"
+    },
+    "pskov-026-na-5-s-plyusom": {
+      "label": "На 5 с плюсом",
+      "config": "./clients/pskov-026-na-5-s-plyusom.json"
+    },
+    "pskov-027-avtovyhlop": {
+      "label": "АВТОвыхлоп",
+      "config": "./clients/pskov-027-avtovyhlop.json"
+    },
+    "pskov-028-master-dizel-pskov": {
+      "label": "Мастер Дизель Псков",
+      "config": "./clients/pskov-028-master-dizel-pskov.json"
+    },
+    "pskov-029-trakservis": {
+      "label": "ТракСервис",
+      "config": "./clients/pskov-029-trakservis.json"
+    },
+    "pskov-030-mb-motors": {
+      "label": "Мб Моторс",
+      "config": "./clients/pskov-030-mb-motors.json"
+    },
+    "pskov-031-remcar60": {
+      "label": "Remcar60",
+      "config": "./clients/pskov-031-remcar60.json"
+    },
+    "pskov-032-servis-perevozchik-60": {
+      "label": "Сервис. Перевозчик. 60",
+      "config": "./clients/pskov-032-servis-perevozchik-60.json"
+    },
+    "pskov-033-mashservis": {
+      "label": "Машсервис",
+      "config": "./clients/pskov-033-mashservis.json"
+    },
+    "pskov-034-avtovolt": {
+      "label": "АвтоВольт",
+      "config": "./clients/pskov-034-avtovolt.json"
+    },
+    "pskov-035-avtoservis-borisovichi": {
+      "label": "Автосервис Борисовичи",
+      "config": "./clients/pskov-035-avtoservis-borisovichi.json"
+    },
+    "pskov-036-avtomasterskaya-quattro60": {
+      "label": "Автомастерская Quattro60",
+      "config": "./clients/pskov-036-avtomasterskaya-quattro60.json"
+    },
+    "pskov-037-avtoservis-evroservis": {
+      "label": "Автосервис ЕвроСервис",
+      "config": "./clients/pskov-037-avtoservis-evroservis.json"
+    },
+    "pskov-038-motor-head": {
+      "label": "Motor Head",
+      "config": "./clients/pskov-038-motor-head.json"
+    },
+    "pskov-039-car-house-60": {
+      "label": "Car House 60",
+      "config": "./clients/pskov-039-car-house-60.json"
+    },
+    "pskov-040-vir-tex-auto": {
+      "label": "Vir Tex Auto",
+      "config": "./clients/pskov-040-vir-tex-auto.json"
+    },
+    "pskov-041-rotor": {
+      "label": "Ротор",
+      "config": "./clients/pskov-041-rotor.json"
+    },
+    "pskov-042-avto-service-dizeley": {
+      "label": "Avto Service Дизелей",
+      "config": "./clients/pskov-042-avto-service-dizeley.json"
+    },
+    "pskov-043-avtoremont": {
+      "label": "Авторемонт",
+      "config": "./clients/pskov-043-avtoremont.json"
+    },
+    "pskov-044-epitsentr": {
+      "label": "Эпицентр",
+      "config": "./clients/pskov-044-epitsentr.json"
+    },
+    "pskov-045-akpp-dsg-service": {
+      "label": "Akpp-dsg-service",
+      "config": "./clients/pskov-045-akpp-dsg-service.json"
+    },
+    "pskov-046-gaechka-rus": {
+      "label": "Гаечка. Рус",
+      "config": "./clients/pskov-046-gaechka-rus.json"
+    },
+    "pskov-047-kvazar": {
+      "label": "Квазар",
+      "config": "./clients/pskov-047-kvazar.json"
+    },
+    "pskov-048-avtoservis-dlya-inomarok": {
+      "label": "Автосервис для иномарок",
+      "config": "./clients/pskov-048-avtoservis-dlya-inomarok.json"
+    },
+    "pskov-049-avtoremont": {
+      "label": "Авторемонт",
+      "config": "./clients/pskov-049-avtoremont.json"
+    },
+    "pskov-050-profservis60": {
+      "label": "Profservis60",
+      "config": "./clients/pskov-050-profservis60.json"
     }
   }
 }

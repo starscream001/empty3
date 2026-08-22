@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Демо автосервисов Псковской области</title>
+  <meta name="description" content="Подборка подготовленных демо-сайтов для автосервисов Псковской области." />
+  <meta name="theme-color" content="#171a1f" />
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./demos.css?v=1" />
+  <script src="./demos.js?v=1" defer></script>
+</head>
+<body>
+  <header class="catalog-header">
+    <div class="container catalog-header__inner">
+      <a class="back-link" href="../../">Направления</a>
+      <p class="catalog-kicker">Автосервисы</p>
+      <h1>Демо для Псковской области</h1>
+      <p class="catalog-lead">Откройте страницу сервиса или посмотрите четыре варианта дизайна.</p>
+    </div>
+  </header>
+
+  <main class="catalog-main">
+    <div class="container">
+      <section class="catalog-toolbar" aria-label="Поиск демо">
+        <label class="search-field">
+          <span>Найти сервис</span>
+          <input type="search" placeholder="Название, адрес или услуга" autocomplete="off" data-search />
+        </label>
+        <label class="variant-filter">
+          <span>Дизайн по умолчанию</span>
+          <select data-variant-filter>
+            <option value="">Все варианты</option>
+            <option value="industrial">Индустриальный</option>
+            <option value="performance">Динамичный</option>
+            <option value="atelier">Светлый премиальный</option>
+            <option value="diagnostic">Технологичный</option>
+          </select>
+        </label>
+      </section>
+
+      <p class="catalog-count" aria-live="polite" data-catalog-count></p>
+      <section class="demo-grid" aria-label="Список демо" data-demo-grid></section>
+      <p class="empty-state" hidden data-empty-state>По этому запросу ничего не найдено.</p>
+    </div>
+  </main>
+</body>
+</html>

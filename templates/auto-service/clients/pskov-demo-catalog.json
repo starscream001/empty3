@@ -1,0 +1,862 @@
+{
+  "title": "Демо автосервисов Псковской области",
+  "generatedAt": "2026-08-23",
+  "items": [
+    {
+      "id": "pskov-001-pskovhab",
+      "leadId": "PSK-001",
+      "name": "ПсковХаб",
+      "city": "Псков",
+      "address": "Чудская ул., 8А, Псков",
+      "rating": "5",
+      "reviewsCount": 394,
+      "services": [
+        "Заправка и ремонт автокондиционера",
+        "Ремонт выхлопной системы",
+        "Ремонт тормозной системы",
+        "Ремонт двигателя",
+        "Замена масла"
+      ],
+      "defaultVariant": "performance",
+      "yandexUrl": "https://yandex.ru/maps/org/pskovkhab/62800220870/"
+    },
+    {
+      "id": "pskov-002-avtoservis-na-rizhskom",
+      "leadId": "PSK-002",
+      "name": "Автосервис на Рижском",
+      "city": "Псковский район",
+      "address": "Юбилейная ул., 2, д. Неёлово-2",
+      "rating": "4.9",
+      "reviewsCount": 223,
+      "services": [
+        "Заправка и ремонт автокондиционера",
+        "Ремонт тормозной системы",
+        "Ремонт двигателя",
+        "Полное сервисное обслуживание",
+        "Замена масла"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/avtoservis_na_rizhskom/1131290575/"
+    },
+    {
+      "id": "pskov-003-servisnyy-tsentr",
+      "leadId": "PSK-003",
+      "name": "Сервисный центр",
+      "city": "Псков",
+      "address": "Советская ул., 113, корп. 2, Псков",
+      "rating": "5",
+      "reviewsCount": 151,
+      "services": [
+        "Шиномонтаж",
+        "Магазин автозапчастей и автотоваров",
+        "Ремонт АКПП"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/servisny_tsentr/1159206312/"
+    },
+    {
+      "id": "pskov-004-zapchasti-tut",
+      "leadId": "PSK-004",
+      "name": "Запчасти Тут",
+      "city": "Псков",
+      "address": "ул. Декабристов, 19/3, Псков",
+      "rating": "4.7",
+      "reviewsCount": 125,
+      "services": [
+        "Предрейсовый техосмотр",
+        "Заправка и ремонт автокондиционера",
+        "Бронирование стёкол",
+        "Аэрография",
+        "Ремонт выхлопной системы"
+      ],
+      "defaultVariant": "atelier",
+      "yandexUrl": "https://yandex.ru/maps/org/zapchasti_tut/230405731249/"
+    },
+    {
+      "id": "pskov-005-ttk-glushiteli",
+      "leadId": "PSK-005",
+      "name": "ТТК глушители",
+      "city": "Псков",
+      "address": "ул. Труда, 83, Псков",
+      "rating": "5",
+      "reviewsCount": 120,
+      "services": [
+        "Автосервис",
+        "Автотехцентр",
+        "Сварочные работы"
+      ],
+      "defaultVariant": "industrial",
+      "yandexUrl": "https://yandex.ru/maps/org/ttk_glushiteli/33756742224/"
+    },
+    {
+      "id": "pskov-006-motor",
+      "leadId": "PSK-006",
+      "name": "Мотор",
+      "city": "Псков",
+      "address": "Инженерная ул., 102, Псков",
+      "rating": "4.8",
+      "reviewsCount": 118,
+      "services": [
+        "Заправка и ремонт автокондиционера",
+        "Бронирование стёкол",
+        "Ремонт выхлопной системы",
+        "Ремонт тормозной системы",
+        "Ремонт пластиковых бамперов"
+      ],
+      "defaultVariant": "atelier",
+      "yandexUrl": "https://yandex.ru/maps/org/motor/219868361638/"
+    },
+    {
+      "id": "pskov-007-dzhem",
+      "leadId": "PSK-007",
+      "name": "Джем",
+      "city": "Псков",
+      "address": "ул. Труда, 79Б, Псков",
+      "rating": "4.6",
+      "reviewsCount": 113,
+      "services": [
+        "Заправка и ремонт автокондиционера",
+        "Ремонт выхлопной системы",
+        "Ремонт тормозной системы",
+        "Ремонт АКПП",
+        "Ремонт двигателя"
+      ],
+      "defaultVariant": "performance",
+      "yandexUrl": "https://yandex.ru/maps/org/dzhem/1157625264/"
+    },
+    {
+      "id": "pskov-008-road60",
+      "leadId": "PSK-008",
+      "name": "Роад60",
+      "city": "Псковский район",
+      "address": "Юбилейная ул., 1Б, д. Неёлово-1",
+      "rating": "5",
+      "reviewsCount": 89,
+      "services": [
+        "Ремонт дисков",
+        "Ремонт ходовой части",
+        "Ремонт тормозной системы"
+      ],
+      "defaultVariant": "performance",
+      "yandexUrl": "https://yandex.ru/maps/org/road60/165517092285/"
+    },
+    {
+      "id": "pskov-009-na-vysote",
+      "leadId": "PSK-009",
+      "name": "На высоте",
+      "city": "Псков",
+      "address": "Гаражный пр., 8, Псков",
+      "rating": "5",
+      "reviewsCount": 83,
+      "services": [
+        "Заправка и ремонт автокондиционера",
+        "Ремонт выхлопной системы",
+        "Ремонт тормозной системы",
+        "Ремонт АКПП",
+        "Ремонт двигателя"
+      ],
+      "defaultVariant": "performance",
+      "yandexUrl": "https://yandex.ru/maps/org/na_vysote/56148152434/"
+    },
+    {
+      "id": "pskov-010-remfar-psk",
+      "leadId": "PSK-010",
+      "name": "RemFar. psk",
+      "city": "Псков",
+      "address": "Ипподромная ул., 145, Псков",
+      "rating": "5",
+      "reviewsCount": 68,
+      "services": [
+        "Студия тюнинга",
+        "Оклейка машин",
+        "Автосвет"
+      ],
+      "defaultVariant": "atelier",
+      "yandexUrl": "https://yandex.ru/maps/org/remfar_psk/196447188783/"
+    },
+    {
+      "id": "pskov-011-drayv-plyus",
+      "leadId": "PSK-011",
+      "name": "Драйв Плюс",
+      "city": "Псков",
+      "address": "Гаражный пр., 18А, Псков",
+      "rating": "4.7",
+      "reviewsCount": 57,
+      "services": [
+        "Ремонт тормозной системы",
+        "Ремонт двигателя",
+        "Полное сервисное обслуживание",
+        "Замена масла",
+        "Ремонт ходовой части"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/drayv_plyus/83568646707/"
+    },
+    {
+      "id": "pskov-012-avtoservis-24",
+      "leadId": "PSK-012",
+      "name": "Автосервис 24",
+      "city": "Псков",
+      "address": "Крестовское ш., 40Б, корп. 1, Псков",
+      "rating": "4.8",
+      "reviewsCount": 56,
+      "services": [
+        "Ремонт выхлопной системы",
+        "Ремонт тормозной системы",
+        "Ремонт пластиковых бамперов",
+        "Ремонт АКПП",
+        "Ремонт двигателя"
+      ],
+      "defaultVariant": "performance",
+      "yandexUrl": "https://yandex.ru/maps/org/avtoservis_24/109849484973/"
+    },
+    {
+      "id": "pskov-013-tes-auto",
+      "leadId": "PSK-013",
+      "name": "Tes Auto",
+      "city": "Псков",
+      "address": "Октябрьский просп., 50, корп. 1, Псков",
+      "rating": "5",
+      "reviewsCount": 54,
+      "services": [
+        "Ремонт дисков",
+        "Ремонт деталей АКПП",
+        "Ремонт системы охлаждения",
+        "Ремонт гидроусилителя руля",
+        "Проточка тормозных дисков"
+      ],
+      "defaultVariant": "performance",
+      "yandexUrl": "https://yandex.ru/maps/org/tes_auto/64233581306/"
+    },
+    {
+      "id": "pskov-014-elektron-avto",
+      "leadId": "PSK-014",
+      "name": "Электрон-авто",
+      "city": "Псков",
+      "address": "ул. Леона Поземского, 76, Псков",
+      "rating": "4.8",
+      "reviewsCount": 44,
+      "services": [
+        "Ремонт ГБЦ",
+        "Ремонт топливной системы",
+        "Ремонт генераторов",
+        "Ремонт КПП",
+        "Сигнализация"
+      ],
+      "defaultVariant": "industrial",
+      "yandexUrl": "https://yandex.ru/maps/org/elektron_avto/140160294320/"
+    },
+    {
+      "id": "pskov-015-avtoelektrik-60rus",
+      "leadId": "PSK-015",
+      "name": "Автоэлектрик 60rus",
+      "city": "Псков",
+      "address": "Гаражный пр., 18, стр. 13, Псков",
+      "rating": "4.8",
+      "reviewsCount": 43,
+      "services": [
+        "Сигнализация",
+        "Ремонт автоэлектрики",
+        "Компьютерная диагностика автомобиля Посещение с животными:разрешено с кошками и собаками"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/avtoelektrik_60rus/97374368814/"
+    },
+    {
+      "id": "pskov-016-arv-service",
+      "leadId": "PSK-016",
+      "name": "Arv service",
+      "city": "Псков",
+      "address": "Инженерная ул., 94А, Псков",
+      "rating": "5",
+      "reviewsCount": 43,
+      "services": [
+        "Ремонт автомобильных люков",
+        "Ремонт шаровых опор",
+        "Ремонт рулевого редуктора",
+        "Ремонт системы охлаждения",
+        "Ремонт гидроусилителя руля"
+      ],
+      "defaultVariant": "industrial",
+      "yandexUrl": "https://yandex.ru/maps/org/arv_service/46754750945/"
+    },
+    {
+      "id": "pskov-017-remont-akpp",
+      "leadId": "PSK-017",
+      "name": "Ремонт АКПП",
+      "city": "Псковский район",
+      "address": "Урожайная ул., 133, садоводческое некоммерческое товарищество Родина",
+      "rating": "4.9",
+      "reviewsCount": 41,
+      "services": [],
+      "defaultVariant": "industrial",
+      "yandexUrl": "https://yandex.ru/maps/org/remont_akpp/88994258048/"
+    },
+    {
+      "id": "pskov-018-antikor60",
+      "leadId": "PSK-018",
+      "name": "АнтиКор60",
+      "city": "Псков",
+      "address": "Алмазная ул., 9Б, Псков АК АнтиКор60",
+      "rating": "5",
+      "reviewsCount": 41,
+      "services": [
+        "Автосервис",
+        "Автотехцентр",
+        "Детейлинг",
+        "Нанесение покрытий"
+      ],
+      "defaultVariant": "atelier",
+      "yandexUrl": "https://yandex.ru/maps/org/antikor60/29822091190/"
+    },
+    {
+      "id": "pskov-019-start-plus",
+      "leadId": "PSK-019",
+      "name": "Start Plus",
+      "city": "Псков",
+      "address": "Звёздная ул., 3А, Псков",
+      "rating": "4.8",
+      "reviewsCount": 40,
+      "services": [
+        "Ремонт автоэлектрики"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/start_plus/71231727499/"
+    },
+    {
+      "id": "pskov-020-pravilnyy-avtoremont",
+      "leadId": "PSK-020",
+      "name": "Правильный Авторемонт",
+      "city": "Псков",
+      "address": "ул. Николая Васильева, 90Б, Псков",
+      "rating": "5",
+      "reviewsCount": 38,
+      "services": [
+        "Ремонт тормозной системы",
+        "Ремонт двигателя",
+        "Полное сервисное обслуживание",
+        "Замена масла",
+        "Установка парктроника"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/pravilny_avtoremont/69662285719/"
+    },
+    {
+      "id": "pskov-021-startery-i-generatory",
+      "leadId": "PSK-021",
+      "name": "Стартёры и Генераторы",
+      "city": "Псков",
+      "address": "Инженерная ул., 1, лит.Е, Псков этаж 2",
+      "rating": "4.3",
+      "reviewsCount": 35,
+      "services": [
+        "Ремонт автоэлектрики Для лиц с ограниченными физическими возможностями:для людей с нарушением слуха",
+        "Для людей с нарушением зрения"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/startyory_i_generatory/1211231670/"
+    },
+    {
+      "id": "pskov-022-vroom-vroom-avto",
+      "leadId": "PSK-022",
+      "name": "Vroom Vroom Avto",
+      "city": "Псков",
+      "address": "ул. Труда, 68Б, Псков",
+      "rating": "4.2",
+      "reviewsCount": 35,
+      "services": [
+        "Автосервис",
+        "Автотехцентр",
+        "Ремонт двигателей",
+        "Шиномонтаж"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/vroom_vroom_avto/131539238808/"
+    },
+    {
+      "id": "pskov-023-kig-37",
+      "leadId": "PSK-023",
+      "name": "Киг-37",
+      "city": "Псков",
+      "address": "Зональное ш., 32Б, Псков",
+      "rating": "4.7",
+      "reviewsCount": 32,
+      "services": [
+        "Заправка и ремонт автокондиционера",
+        "Ремонт тормозной системы",
+        "Ремонт двигателя",
+        "Замена масла",
+        "Установка парктроника"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/kig_37/172057996988/"
+    },
+    {
+      "id": "pskov-024-forsazh-avtoservis-zapchasti-dlya-inomar",
+      "leadId": "PSK-024",
+      "name": "Форсаж - автосервис, запчасти для иномарок",
+      "city": "Псков",
+      "address": "Октябрьский просп., 56А, Псков",
+      "rating": "4.2",
+      "reviewsCount": 29,
+      "services": [
+        "Ремонт тормозной системы",
+        "Ремонт двигателя",
+        "Полное сервисное обслуживание",
+        "Замена масла",
+        "Установка парктроника"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/forsazh_avtoservis_zapchasti_dlya_inomarok/1162999072/"
+    },
+    {
+      "id": "pskov-025-five-servise",
+      "leadId": "PSK-025",
+      "name": "Five Servise",
+      "city": "Псков",
+      "address": "Советская ул., 51, Псков",
+      "rating": "4.5",
+      "reviewsCount": 24,
+      "services": [
+        "Ремонт двигателя"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/five_servise/27156686033/"
+    },
+    {
+      "id": "pskov-026-na-5-s-plyusom",
+      "leadId": "PSK-026",
+      "name": "На 5 с плюсом",
+      "city": "Псков",
+      "address": "Инженерная ул., 9, Псков",
+      "rating": "4.3",
+      "reviewsCount": 24,
+      "services": [
+        "Ремонт пластиковых бамперов",
+        "Ремонт АКПП",
+        "Ремонт двигателя",
+        "Замена масла",
+        "Покраска автомобиля"
+      ],
+      "defaultVariant": "atelier",
+      "yandexUrl": "https://yandex.ru/maps/org/na_5_s_plyusom/1192036916/"
+    },
+    {
+      "id": "pskov-027-avtovyhlop",
+      "leadId": "PSK-027",
+      "name": "АВТОвыхлоп",
+      "city": "Псковский район",
+      "address": "Балтийская ул., 12И, д. Борисовичи",
+      "rating": "4.8",
+      "reviewsCount": 23,
+      "services": [
+        "Ремонт выхлопной системы"
+      ],
+      "defaultVariant": "performance",
+      "yandexUrl": "https://yandex.ru/maps/org/avtovykhlop/199350892290/"
+    },
+    {
+      "id": "pskov-028-master-dizel-pskov",
+      "leadId": "PSK-028",
+      "name": "Мастер Дизель Псков",
+      "city": "Псковский район",
+      "address": "Сосновая ул., 9, посёлок Корытово, Псков",
+      "rating": "4.7",
+      "reviewsCount": 22,
+      "services": [
+        "Заправка и ремонт автокондиционера",
+        "Ремонт выхлопной системы",
+        "Ремонт тормозной системы",
+        "Ремонт АКПП",
+        "Ремонт двигателя"
+      ],
+      "defaultVariant": "performance",
+      "yandexUrl": "https://yandex.ru/maps/org/master_dizel_pskov/130204021321/"
+    },
+    {
+      "id": "pskov-029-trakservis",
+      "leadId": "PSK-029",
+      "name": "ТракСервис",
+      "city": "Псков",
+      "address": "ул. Леона Поземского, 121, корп. 1, Псков",
+      "rating": "4.4",
+      "reviewsCount": 21,
+      "services": [
+        "Предрейсовый техосмотр",
+        "Ремонт выхлопной системы",
+        "Ремонт тормозной системы",
+        "Ремонт АКПП",
+        "Ремонт двигателя"
+      ],
+      "defaultVariant": "performance",
+      "yandexUrl": "https://yandex.ru/maps/org/trakservis/159473227777/"
+    },
+    {
+      "id": "pskov-030-mb-motors",
+      "leadId": "PSK-030",
+      "name": "Мб Моторс",
+      "city": "Псковский район",
+      "address": "д. Уграда, 18",
+      "rating": "5",
+      "reviewsCount": 21,
+      "services": [
+        "Полное сервисное обслуживание",
+        "Ремонт генераторов",
+        "Ремонт сцепления",
+        "Ремонт тормозной системы",
+        "Удаление катализаторов"
+      ],
+      "defaultVariant": "industrial",
+      "yandexUrl": "https://yandex.ru/maps/org/mb_motors/107788993104/"
+    },
+    {
+      "id": "pskov-031-remcar60",
+      "leadId": "PSK-031",
+      "name": "Remcar60",
+      "city": "Псков",
+      "address": "Шоссейная ул., 2И, Псков",
+      "rating": "4.7",
+      "reviewsCount": 20,
+      "services": [
+        "Шиномонтаж",
+        "Автосервис",
+        "Автотехцентр",
+        "Магазин автозапчастей и автотоваров"
+      ],
+      "defaultVariant": "industrial",
+      "yandexUrl": "https://yandex.ru/maps/org/remcar60/167400993761/"
+    },
+    {
+      "id": "pskov-032-servis-perevozchik-60",
+      "leadId": "PSK-032",
+      "name": "Сервис. Перевозчик. 60",
+      "city": "Псков",
+      "address": "Дачная ул., 2Б, Псков этаж 2",
+      "rating": "4.7",
+      "reviewsCount": 18,
+      "services": [
+        "Заправка и ремонт автокондиционера",
+        "Ремонт выхлопной системы",
+        "Ремонт АКПП",
+        "Ремонт двигателя",
+        "Полное сервисное обслуживание"
+      ],
+      "defaultVariant": "performance",
+      "yandexUrl": "https://yandex.ru/maps/org/servis_perevozchik_60/12993871375/"
+    },
+    {
+      "id": "pskov-033-mashservis",
+      "leadId": "PSK-033",
+      "name": "Машсервис",
+      "city": "Псков",
+      "address": "Вокзальная ул., 22А, Псков",
+      "rating": "4.3",
+      "reviewsCount": 15,
+      "services": [
+        "Ремонт выхлопной системы",
+        "Ремонт тормозной системы",
+        "Ремонт АКПП",
+        "Ремонт двигателя",
+        "Полное сервисное обслуживание"
+      ],
+      "defaultVariant": "performance",
+      "yandexUrl": "https://yandex.ru/maps/org/mashservis/1014058766/"
+    },
+    {
+      "id": "pskov-034-avtovolt",
+      "leadId": "PSK-034",
+      "name": "АвтоВольт",
+      "city": "Псков",
+      "address": "Советская ул., 51, Псков",
+      "rating": "4.8",
+      "reviewsCount": 14,
+      "services": [
+        "Ремонт салона",
+        "Ремонт распредвала",
+        "Ремонт дисков",
+        "Ремонт деталей АКПП",
+        "Ремонт системы охлаждения"
+      ],
+      "defaultVariant": "performance",
+      "yandexUrl": "https://yandex.ru/maps/org/avtovolt/30790756970/"
+    },
+    {
+      "id": "pskov-035-avtoservis-borisovichi",
+      "leadId": "PSK-035",
+      "name": "Автосервис Борисовичи",
+      "city": "Псковский район",
+      "address": "д. Борисовичи, 1/1",
+      "rating": "4.4",
+      "reviewsCount": 13,
+      "services": [
+        "Автосервис",
+        "Автотехцентр"
+      ],
+      "defaultVariant": "industrial",
+      "yandexUrl": "https://yandex.ru/maps/org/avtoservis_borisovichi/241620209301/"
+    },
+    {
+      "id": "pskov-036-avtomasterskaya-quattro60",
+      "leadId": "PSK-036",
+      "name": "Автомастерская Quattro60",
+      "city": "Псков",
+      "address": "ул. Белинского, 78, Псков",
+      "rating": "4.3",
+      "reviewsCount": 10,
+      "services": [
+        "Ремонт двигателя",
+        "Замена масла",
+        "Ремонт ходовой части",
+        "Ремонт стартеров",
+        "Компьютерная диагностика автомобиля"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/avtomasterskaya_quattro60/95659556334/"
+    },
+    {
+      "id": "pskov-037-avtoservis-evroservis",
+      "leadId": "PSK-037",
+      "name": "Автосервис ЕвроСервис",
+      "city": "Псков",
+      "address": "ул. Леона Поземского, 111, Псков",
+      "rating": "4.5",
+      "reviewsCount": 8,
+      "services": [
+        "Автосервис",
+        "Автотехцентр",
+        "Автосервисное и гаражное оборудование"
+      ],
+      "defaultVariant": "industrial",
+      "yandexUrl": "https://yandex.ru/maps/org/avtoservis_yevroservis/35211046186/"
+    },
+    {
+      "id": "pskov-038-motor-head",
+      "leadId": "PSK-038",
+      "name": "Motor Head",
+      "city": "Псков",
+      "address": "Советская ул., 51, Псков",
+      "rating": "4.4",
+      "reviewsCount": 8,
+      "services": [
+        "Ремонт гидроусилителя руля",
+        "Раскоксовка",
+        "Эндоскопия двигателя",
+        "Ремонт сцепления",
+        "Ремонт тормозной системы"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/motor_head/121314743193/"
+    },
+    {
+      "id": "pskov-039-car-house-60",
+      "leadId": "PSK-039",
+      "name": "Car House 60",
+      "city": "Псков",
+      "address": "Гаражный пр., 18, стр. 13, Псков бокс 21, 22",
+      "rating": "4.4",
+      "reviewsCount": 6,
+      "services": [
+        "Ремонт салона",
+        "Ремонт деталей АКПП",
+        "Ремонт системы охлаждения",
+        "Ремонт гидроусилителя руля",
+        "Ремонт АКПП"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/car_house_60/32683612474/"
+    },
+    {
+      "id": "pskov-040-vir-tex-auto",
+      "leadId": "PSK-040",
+      "name": "Vir Tex Auto",
+      "city": "Псков",
+      "address": "Шоссейная ул., 3, Псков",
+      "rating": "4.4",
+      "reviewsCount": 5,
+      "services": [
+        "Автосервис",
+        "Автотехцентр",
+        "Магазин автозапчастей и автотоваров"
+      ],
+      "defaultVariant": "industrial",
+      "yandexUrl": "https://yandex.ru/maps/org/vir_tex_auto/175481717103/"
+    },
+    {
+      "id": "pskov-041-rotor",
+      "leadId": "PSK-041",
+      "name": "Ротор",
+      "city": "Псков",
+      "address": "Чудская ул., 7, Псков",
+      "rating": "4.3",
+      "reviewsCount": 5,
+      "services": [
+        "Ремонт приборных панелей",
+        "Ремонт деталей АКПП",
+        "Ремонт шаровых опор",
+        "Ремонт системы охлаждения",
+        "Проточка тормозных дисков"
+      ],
+      "defaultVariant": "performance",
+      "yandexUrl": "https://yandex.ru/maps/org/rotor/83451617343/"
+    },
+    {
+      "id": "pskov-042-avto-service-dizeley",
+      "leadId": "PSK-042",
+      "name": "Avto Service Дизелей",
+      "city": "Псков",
+      "address": "ул. Евлентьева, 5А, Псков",
+      "rating": "3.7",
+      "reviewsCount": 5,
+      "services": [
+        "Замена масла",
+        "Компьютерная диагностика автомобиля",
+        "Ремонт автоэлектрики",
+        "Промывка инжектора",
+        "Ремонт форсунок"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/avto_service_dizeley/244952578367/"
+    },
+    {
+      "id": "pskov-043-avtoremont",
+      "leadId": "PSK-043",
+      "name": "Авторемонт",
+      "city": "Псков",
+      "address": "ул. Заборовского, 19Б, Псков",
+      "rating": "4.2",
+      "reviewsCount": 4,
+      "services": [
+        "Ремонт выхлопной системы",
+        "Ремонт тормозной системы",
+        "Ремонт двигателя",
+        "Замена масла",
+        "Покраска автомобиля"
+      ],
+      "defaultVariant": "atelier",
+      "yandexUrl": "https://yandex.ru/maps/org/avtoremont/111279325924/"
+    },
+    {
+      "id": "pskov-044-epitsentr",
+      "leadId": "PSK-044",
+      "name": "Эпицентр",
+      "city": "Псков",
+      "address": "Текстильная ул., 3, Псков",
+      "rating": "",
+      "reviewsCount": 4,
+      "services": [
+        "Шумоизоляция",
+        "Ремонт автоэлектрики",
+        "Компьютерная диагностика автомобиля",
+        "Установка парктроника",
+        "Установка дополнительного оборудования"
+      ],
+      "defaultVariant": "atelier",
+      "yandexUrl": "https://yandex.ru/maps/org/epitsentr/220508860572/"
+    },
+    {
+      "id": "pskov-045-akpp-dsg-service",
+      "leadId": "PSK-045",
+      "name": "Akpp-dsg-service",
+      "city": "Псков",
+      "address": "Дачная ул., 2Б, Псков",
+      "rating": "4",
+      "reviewsCount": 4,
+      "services": [
+        "Ремонт РКПП",
+        "Ремонт деталей АКПП",
+        "Ремонт DSG",
+        "Ремонт сцепления",
+        "Ремонт автоэлектроники"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/akpp_dsg_service/223317978363/"
+    },
+    {
+      "id": "pskov-046-gaechka-rus",
+      "leadId": "PSK-046",
+      "name": "Гаечка. Рус",
+      "city": "Псков",
+      "address": "ул. Леона Поземского, 76А, Псков",
+      "rating": "4.2",
+      "reviewsCount": 3,
+      "services": [
+        "Ремонт автодеталей",
+        "Ремонт деталей АКПП",
+        "Ремонт системы охлаждения",
+        "Ремонт гидроусилителя руля",
+        "Проточка тормозных дисков"
+      ],
+      "defaultVariant": "performance",
+      "yandexUrl": "https://yandex.ru/maps/org/gayechka_rus/39998044026/"
+    },
+    {
+      "id": "pskov-047-kvazar",
+      "leadId": "PSK-047",
+      "name": "Квазар",
+      "city": "Псков",
+      "address": "ул. Леона Поземского, 111, корп. 1, Псков",
+      "rating": "3.5",
+      "reviewsCount": 3,
+      "services": [
+        "Покраска автомобиля",
+        "Полировка"
+      ],
+      "defaultVariant": "atelier",
+      "yandexUrl": "https://yandex.ru/maps/org/kvazar/245549836720/"
+    },
+    {
+      "id": "pskov-048-avtoservis-dlya-inomarok",
+      "leadId": "PSK-048",
+      "name": "Автосервис для иномарок",
+      "city": "Псков",
+      "address": "ул. Леона Поземского, 111, корп. 7, Псков",
+      "rating": "",
+      "reviewsCount": 2,
+      "services": [
+        "Ремонт дисков",
+        "Ремонт деталей АКПП",
+        "Ремонт автодеталей",
+        "Ремонт системы охлаждения",
+        "Ремонт гидроусилителя руля"
+      ],
+      "defaultVariant": "performance",
+      "yandexUrl": "https://yandex.ru/maps/org/avtoservis_dlya_inomarok/144832921104/"
+    },
+    {
+      "id": "pskov-049-avtoremont",
+      "leadId": "PSK-049",
+      "name": "Авторемонт",
+      "city": "Псков",
+      "address": "Рижский просп., 88А, стр. 1, Псков",
+      "rating": "",
+      "reviewsCount": 2,
+      "services": [
+        "Ремонт системы охлаждения",
+        "Эндоскопия двигателя",
+        "Ремонт турбокомпрессора",
+        "Установка дополнительного оборудования",
+        "Ремонт сцепления"
+      ],
+      "defaultVariant": "diagnostic",
+      "yandexUrl": "https://yandex.ru/maps/org/avtoremont/240048950066/"
+    },
+    {
+      "id": "pskov-050-profservis60",
+      "leadId": "PSK-050",
+      "name": "Profservis60",
+      "city": "Псков",
+      "address": "ул. Леона Поземского, 111, корп. 1, Псков",
+      "rating": "3.9",
+      "reviewsCount": 2,
+      "services": [
+        "Ремонт тормозной системы",
+        "Ремонт пластиковых бамперов",
+        "Замена масла",
+        "Покраска автомобиля",
+        "Ремонт ходовой части"
+      ],
+      "defaultVariant": "atelier",
+      "yandexUrl": "https://yandex.ru/maps/org/profservis60/96832888909/"
+    }
+  ]
+}

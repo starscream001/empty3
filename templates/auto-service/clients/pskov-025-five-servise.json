@@ -1,0 +1,192 @@
+{
+  "defaultVariant": "diagnostic",
+  "meta": {
+    "title": "Five Servise - автосервис в Псков",
+    "description": "Five Servise: услуги автосервиса, контакты, карта и отзывы в Псков.",
+    "keywords": "Five Servise, автосервис, Псков, ремонт автомобилей, СТО",
+    "author": "Five Servise",
+    "robots": "index, follow",
+    "canonicalUrl": "",
+    "siteName": "Five Servise"
+  },
+  "brand": {
+    "name": "Five Servise",
+    "shortName": "FI",
+    "caption": "Автосервис"
+  },
+  "business": {
+    "ratingText": "4.5 рейтинг · 24 отзывов",
+    "address": "Советская ул., 51, Псков",
+    "hours": "Открыто до 19:00",
+    "phone": "+7 (911) 398-95-66",
+    "phoneHref": "tel:+79113989566",
+    "whatsappHref": "https://wa.me/79113989566",
+    "openingHoursSchema": ""
+  },
+  "navigation": [
+    {
+      "label": "Услуги",
+      "href": "#services"
+    },
+    {
+      "label": "О сервисе",
+      "href": "#about"
+    },
+    {
+      "label": "Отзывы",
+      "href": "#reviews"
+    },
+    {
+      "label": "Контакты",
+      "href": "#contacts"
+    }
+  ],
+  "cta": {
+    "primary": "Связаться с сервисом",
+    "secondary": "Написать в WhatsApp",
+    "secondaryHref": "https://wa.me/79113989566"
+  },
+  "hero": {
+    "eyebrow": "Псков · автосервис",
+    "title": "Five Servise - сервис для вашего автомобиля",
+    "text": "Уточните актуальные работы, стоимость и удобное время записи по телефону или в мессенджере.",
+    "imageLabel": "Ремонт двигателя",
+    "imageMetric": "4.5 · 24 отзывов"
+  },
+  "quickFacts": [
+    {
+      "value": "4.5",
+      "label": "рейтинг на Яндекс Картах"
+    },
+    {
+      "value": "24",
+      "label": "отзыва на Яндекс Картах"
+    },
+    {
+      "value": "до 19:00",
+      "label": "график по данным сервиса"
+    },
+    {
+      "value": "1",
+      "label": "направлений в карточке"
+    }
+  ],
+  "servicesIntro": {
+    "eyebrow": "Услуги",
+    "title": "Работы, указанные в сервисе",
+    "text": "Актуальную стоимость и возможность записи уточняйте у администрации."
+  },
+  "services": [
+    {
+      "title": "Ремонт двигателя",
+      "description": "Актуальную стоимость и сроки уточняйте по контактам сервиса.",
+      "price": "по запросу"
+    }
+  ],
+  "about": {
+    "eyebrow": "О сервисе",
+    "title": "Five Servise в Псков",
+    "text": "Автосервис с публично указанными контактами и перечнем работ. Перед визитом уточните актуальные условия записи."
+  },
+  "benefits": [
+    {
+      "title": "Перечень работ",
+      "text": "Услуги собраны из публичной карточки сервиса."
+    },
+    {
+      "title": "Контакты",
+      "text": "Позвоните или напишите в доступный мессенджер."
+    },
+    {
+      "title": "Карты",
+      "text": "Постройте маршрут в Яндекс Картах или Google Maps."
+    },
+    {
+      "title": "Отзывы",
+      "text": "Отзывы открываются из карточки на Яндекс Картах."
+    }
+  ],
+  "workflowIntro": {
+    "eyebrow": "Запись",
+    "title": "Как связаться с сервисом",
+    "text": "Уточните детали работ и свободное время до визита."
+  },
+  "workflow": [
+    {
+      "title": "Связь",
+      "text": "Позвоните или напишите сервису."
+    },
+    {
+      "title": "Уточнение работ",
+      "text": "Опишите автомобиль и нужную услугу."
+    },
+    {
+      "title": "Согласование",
+      "text": "Уточните стоимость и время записи."
+    },
+    {
+      "title": "Визит",
+      "text": "Приезжайте в согласованное время."
+    }
+  ],
+  "sections": {
+    "promo": false,
+    "brands": false,
+    "faq": false
+  },
+  "reviewsIntro": {
+    "eyebrow": "Отзывы",
+    "title": "Отзывы о Five Servise",
+    "linkText": "Все отзывы на Яндекс Картах",
+    "linkHref": "https://yandex.ru/maps/org/five_servise/27156686033/"
+  },
+  "reviews": {
+    "source": "yandex",
+    "yandex": {
+      "organizationId": "27156686033",
+      "profileUrl": "https://yandex.ru/maps/org/five_servise/27156686033/",
+      "title": "Отзывы о Five Servise на Яндекс Картах",
+      "linkText": "Все отзывы на Яндекс Картах"
+    }
+  },
+  "location": {
+    "defaultProvider": "yandex",
+    "zoom": 16
+  },
+  "contacts": {
+    "eyebrow": "Контакты",
+    "title": "Позвоните или напишите сервису",
+    "text": "Уточните актуальные работы, стоимость и время записи по указанным контактам.",
+    "actions": [
+      {
+        "label": "Позвонить",
+        "href": "tel:+79113989566"
+      },
+      {
+        "label": "WhatsApp",
+        "href": "https://wa.me/79113989566"
+      },
+      {
+        "label": "ВКонтакте",
+        "href": "https://vk.ru/fiveservice.pskov"
+      }
+    ]
+  },
+  "footer": {
+    "text": "Контакты, услуги, карта и отзывы автосервиса."
+  },
+  "footerLinks": [
+    {
+      "label": "Услуги",
+      "href": "#services"
+    },
+    {
+      "label": "Отзывы",
+      "href": "#reviews"
+    },
+    {
+      "label": "Контакты",
+      "href": "#contacts"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "defaultVariant": "diagnostic",
+  "meta": {
+    "title": "Start Plus - автосервис в Псков",
+    "description": "Start Plus: услуги автосервиса, контакты, карта и отзывы в Псков.",
+    "keywords": "Start Plus, автосервис, Псков, ремонт автомобилей, СТО",
+    "author": "Start Plus",
+    "robots": "index, follow",
+    "canonicalUrl": "",
+    "siteName": "Start Plus"
+  },
+  "brand": {
+    "name": "Start Plus",
+    "shortName": "ST",
+    "caption": "Автосервис"
+  },
+  "business": {
+    "ratingText": "4.8 рейтинг · 40 отзывов",
+    "address": "Звёздная ул., 3А, Псков",
+    "hours": "Открыто до 19:00",
+    "phone": "+7 (921) 003-43-46",
+    "phoneHref": "tel:+79210034346",
+    "whatsappHref": "https://wa.me/89210034346",
+    "openingHoursSchema": ""
+  },
+  "navigation": [
+    {
+      "label": "Услуги",
+      "href": "#services"
+    },
+    {
+      "label": "О сервисе",
+      "href": "#about"
+    },
+    {
+      "label": "Отзывы",
+      "href": "#reviews"
+    },
+    {
+      "label": "Контакты",
+      "href": "#contacts"
+    }
+  ],
+  "cta": {
+    "primary": "Связаться с сервисом",
+    "secondary": "Написать в WhatsApp",
+    "secondaryHref": "https://wa.me/89210034346"
+  },
+  "hero": {
+    "eyebrow": "Псков · автосервис",
+    "title": "Start Plus - сервис для вашего автомобиля",
+    "text": "Уточните актуальные работы, стоимость и удобное время записи по телефону или в мессенджере.",
+    "imageLabel": "Ремонт автоэлектрики",
+    "imageMetric": "4.8 · 40 отзывов"
+  },
+  "quickFacts": [
+    {
+      "value": "4.8",
+      "label": "рейтинг на Яндекс Картах"
+    },
+    {
+      "value": "40",
+      "label": "отзывов на Яндекс Картах"
+    },
+    {
+      "value": "до 19:00",
+      "label": "график по данным сервиса"
+    },
+    {
+      "value": "1",
+      "label": "направлений в карточке"
+    }
+  ],
+  "servicesIntro": {
+    "eyebrow": "Услуги",
+    "title": "Работы, указанные в сервисе",
+    "text": "Актуальную стоимость и возможность записи уточняйте у администрации."
+  },
+  "services": [
+    {
+      "title": "Ремонт автоэлектрики",
+      "description": "Актуальную стоимость и сроки уточняйте по контактам сервиса.",
+      "price": "по запросу"
+    }
+  ],
+  "about": {
+    "eyebrow": "О сервисе",
+    "title": "Start Plus в Псков",
+    "text": "Автосервис с публично указанными контактами и перечнем работ. Перед визитом уточните актуальные условия записи."
+  },
+  "benefits": [
+    {
+      "title": "Перечень работ",
+      "text": "Услуги собраны из публичной карточки сервиса."
+    },
+    {
+      "title": "Контакты",
+      "text": "Позвоните или напишите в доступный мессенджер."
+    },
+    {
+      "title": "Карты",
+      "text": "Постройте маршрут в Яндекс Картах или Google Maps."
+    },
+    {
+      "title": "Отзывы",
+      "text": "Отзывы открываются из карточки на Яндекс Картах."
+    }
+  ],
+  "workflowIntro": {
+    "eyebrow": "Запись",
+    "title": "Как связаться с сервисом",
+    "text": "Уточните детали работ и свободное время до визита."
+  },
+  "workflow": [
+    {
+      "title": "Связь",
+      "text": "Позвоните или напишите сервису."
+    },
+    {
+      "title": "Уточнение работ",
+      "text": "Опишите автомобиль и нужную услугу."
+    },
+    {
+      "title": "Согласование",
+      "text": "Уточните стоимость и время записи."
+    },
+    {
+      "title": "Визит",
+      "text": "Приезжайте в согласованное время."
+    }
+  ],
+  "sections": {
+    "promo": false,
+    "brands": false,
+    "faq": false
+  },
+  "reviewsIntro": {
+    "eyebrow": "Отзывы",
+    "title": "Отзывы о Start Plus",
+    "linkText": "Все отзывы на Яндекс Картах",
+    "linkHref": "https://yandex.ru/maps/org/start_plus/71231727499/"
+  },
+  "reviews": {
+    "source": "yandex",
+    "yandex": {
+      "organizationId": "71231727499",
+      "profileUrl": "https://yandex.ru/maps/org/start_plus/71231727499/",
+      "title": "Отзывы о Start Plus на Яндекс Картах",
+      "linkText": "Все отзывы на Яндекс Картах"
+    }
+  },
+  "location": {
+    "defaultProvider": "yandex",
+    "zoom": 16
+  },
+  "contacts": {
+    "eyebrow": "Контакты",
+    "title": "Позвоните или напишите сервису",
+    "text": "Уточните актуальные работы, стоимость и время записи по указанным контактам.",
+    "actions": [
+      {
+        "label": "Позвонить",
+        "href": "tel:+79210034346"
+      },
+      {
+        "label": "WhatsApp",
+        "href": "https://wa.me/89210034346"
+      },
+      {
+        "label": "ВКонтакте",
+        "href": "https://vk.ru/startpluspsk"
+      }
+    ]
+  },
+  "footer": {
+    "text": "Контакты, услуги, карта и отзывы автосервиса."
+  },
+  "footerLinks": [
+    {
+      "label": "Услуги",
+      "href": "#services"
+    },
+    {
+      "label": "Отзывы",
+      "href": "#reviews"
+    },
+    {
+      "label": "Контакты",
+      "href": "#contacts"
+    }
+  ]
+}

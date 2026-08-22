@@ -28,12 +28,12 @@
   document.documentElement.dataset.templateLoading = "true";
 
   window.AUTO_SERVICE_CONFIG_READY = (async () => {
-    const manifest = await loadJson("./clients/manifest.json?v=1");
+    const manifest = await loadJson("./clients/manifest.json?v=2");
     const hasRequestedClient = requestedClient
       && Object.prototype.hasOwnProperty.call(manifest.clients, requestedClient);
     const clientId = hasRequestedClient ? requestedClient : manifest.defaultClient;
     const clientEntry = manifest.clients[clientId];
-    const clientConfig = await loadJson(`${clientEntry.config}?v=1`);
+    const clientConfig = await loadJson(`${clientEntry.config}?v=2`);
     const mergedConfig = mergeConfig(baseConfig, clientConfig);
 
     window.AUTO_SERVICE_CLIENT_ID = clientId;
